@@ -125,8 +125,18 @@ function updateProjectNameDisplay() {
 
 function updateProjectStatusDisplay() {
 	updateProjectStatus();
+	updateProjectStatusIndicatorDisplay();
+	updatePunchButton();
+}
+
+function updateProjectStatusIndicatorDisplay() {
 	var element = document.getElementById('project_status_indicator');
-	element.object.setValue(valueFromStatus());
+	element.object.setValue(indicatorValueFromStatus());
+}
+
+function updatePunchButton() {
+	var element = document.getElementById('punch_button');
+	element.object.textElement.innerText = buttonValueFromStatus();
 }
 
 function updateProjectStatus() {
@@ -146,7 +156,7 @@ function getProjectStatus() {
 	}
 }
 
-function valueFromStatus() {
+function indicatorValueFromStatus() {
 	var value;
 	
 	switch (status) {
@@ -164,4 +174,24 @@ function valueFromStatus() {
 	}
 	
 	return value;
+}
+
+function buttonValueFromStatus() {
+	var action;
+	
+	switch (status) {
+	case 'error':
+		action = 'in';
+		break;
+	case 'in':
+		action = 'out';
+		break;
+	case 'out':
+		action = 'in';
+		break;
+	default:
+		action = 'in';
+	}
+	
+	return 'punch ' + action;
 }
