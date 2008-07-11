@@ -6,7 +6,7 @@ function setupParts() {
     CreateInfoButton('info', { frontID: 'front', foregroundStyle: 'white', backgroundStyle: 'black', onclick: 'showBack' });
     CreateGlassButton('done', { text: 'Done', onclick: 'showFront' });
     CreateText('project_name_display', { text: 'project name' });
-    CreateText('text', { text: 'Project Name:' });
+    CreateText('project_name_input_label', { text: 'Project Name:' });
     CreateIndicator('project_status_indicator', { onValue: 1, criticalValue: 3, warningValue: 2 });
     CreateButton('punch_button', { leftImageWidth: 10, onclick: 'buttonAction', rightImageWidth: 10, text: 'Button' });
 }

@@ -12,6 +12,7 @@ var status;
 function load()
 {
     setupParts();
+	showBack();
 }
 
 //

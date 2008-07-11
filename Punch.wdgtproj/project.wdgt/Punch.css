@@ -49,17 +49,6 @@ body {
     font-family: HelveticaNeue-Bold;
 }
 
-#text {
-    position: absolute;
-    font-size: 10pt;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    font-family: HelveticaNeue-Bold;
-    left: 26px;
-    top: 26px;
-}
-
 #project_name_input {
     position: absolute;
     color: black;
@@ -97,4 +86,15 @@ body {
     right: 0px;
     width: auto;
     height: auto;
+}
+
+#project_name_input_label {
+    position: absolute;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    font-family: HelveticaNeue-Bold;
+    left: 26px;
+    top: 26px;
 }
