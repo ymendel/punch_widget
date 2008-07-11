@@ -9,6 +9,6 @@ function setupParts() {
     CreateText('project_name_display', { text: 'project name' });
     CreateText('text', { text: 'Project Name:' });
     CreateIndicator('project_status_indicator', { onValue: 1, criticalValue: 3, warningValue: 2 });
-    CreateButton('punch_button', { leftImageWidth: 10, rightImageWidth: 10, text: 'Button' });
+    CreateButton('punch_button', { leftImageWidth: 10, onclick: 'buttonAction', rightImageWidth: 10, text: 'Button' });
 }
 window.addEventListener('load', setupParts, false);

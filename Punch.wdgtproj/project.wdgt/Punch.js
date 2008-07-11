@@ -176,7 +176,7 @@ function indicatorValueFromStatus() {
 	return value;
 }
 
-function buttonValueFromStatus() {
+function actionFromStatus() {
 	var action;
 	
 	switch (status) {
@@ -193,5 +193,13 @@ function buttonValueFromStatus() {
 		action = 'in';
 	}
 	
-	return 'punch ' + action;
+	return action;
+}
+
+function buttonValueFromStatus() {
+	return 'punch ' + actionFromStatus();
+}
+
+function buttonAction(event) {
+	widget.system('/usr/bin/punch ' + actionFromStatus() + ' ' + project, null);
 }
