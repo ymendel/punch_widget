@@ -203,4 +203,5 @@ function buttonValueFromStatus() {
 
 function buttonAction(event) {
 	widget.system(punch_command + ' ' + actionFromStatus() + ' ' + project, null);
+	updateProjectStatusDisplay();
 }

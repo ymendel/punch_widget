@@ -25,7 +25,7 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>b7d1e061874eac41</string>
+		<string>dba3bf90884eac41</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
@@ -98,13 +98,7 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array>
-		<array>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-	</array>
+	<array/>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>
