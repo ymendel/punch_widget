@@ -8,5 +8,6 @@ function setupParts() {
     CreateGlassButton('done', { text: 'Done', onclick: 'showFront' });
     CreateText('project_name_display', { text: 'project name' });
     CreateText('text', { text: 'Project Name:' });
+    CreateIndicator('project_status_indicator', { onValue: 1, criticalValue: 3, warningValue: 2 });
 }
 window.addEventListener('load', setupParts, false);

@@ -102,3 +102,11 @@ body {
     left: 136px;
     top: 171px;
 }
+
+#project_status_indicator {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 119px;
+    top: 137px;
+}
