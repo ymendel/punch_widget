@@ -122,6 +122,14 @@ if (window.widget) {
     widget.onsync = sync;
 }
 
+function projectNameSubmit(event) {
+	var character = String.fromCharCode(event.which);
+	if ((character == '\r') || (character == '\n')) {
+		showFront(event);
+	}
+	return true;
+}
+
 function setProject() {
 	var element = document.getElementById('project_name_input');
 	val = element.value;
