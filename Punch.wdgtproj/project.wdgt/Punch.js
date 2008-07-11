@@ -2,6 +2,7 @@
 // You may edit this file to customize your Dashboard widget.
 
 var project;
+var status;
 
 //
 // Function: load()
@@ -88,6 +89,7 @@ function showFront(event)
 {
 	setProject();
 	updateProjectNameDisplay();
+	updateProjectStatusDisplay();
 	
     var front = document.getElementById("front");
     var back = document.getElementById("back");
@@ -121,6 +123,16 @@ function updateProjectNameDisplay() {
 	element.innerText = project;
 }
 
+function updateProjectStatusDisplay() {
+	updateProjectStatus();
+	var element = document.getElementById('project_status_indicator');
+	element.object.setValue(valueFromStatus());
+}
+
+function updateProjectStatus() {
+	status = getProjectStatus();
+}
+
 function getProjectStatus() {
 	var outputString = widget.system('/usr/bin/punch status ' + project, null).outputString;
 	var lines = outputString.split(/\n/);
@@ -132,4 +144,24 @@ function getProjectStatus() {
 	} else {
 		return 'error';
 	}
+}
+
+function valueFromStatus() {
+	var value;
+	
+	switch (status) {
+	case 'error':
+		value = 0;
+		break;
+	case 'in':
+		value = '1';
+		break;
+	case 'out':
+		value = '3';
+		break;
+	default:
+		value = 0;
+	}
+	
+	return value;
 }
