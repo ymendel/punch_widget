@@ -7,7 +7,7 @@
 		<key>ContentSplitViewConfig</key>
 		<integer>8</integer>
 		<key>SplitViewConfig</key>
-		<integer>1</integer>
+		<integer>3</integer>
 		<key>_collapsingFrameDimension</key>
 		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
@@ -22,6 +22,31 @@
 	</dict>
 	<key>ContentViewType</key>
 	<integer>0</integer>
+	<key>Dashboard Widget Prefs</key>
+	<dict>
+		<key>id</key>
+		<string>b492e6a92d4eac41</string>
+		<key>in-layer</key>
+		<true/>
+		<key>path</key>
+		<string>/private/var/folders/Y6/Y6YXERgVHkK9opLYiohr8++++TI/-Tmp-/Dashcode/.TemplateCustomKL0cJL/Punch.wdgtproj/project.wdgt/</string>
+		<key>percent-offset-x</key>
+		<integer>0</integer>
+		<key>percent-offset-y</key>
+		<integer>0</integer>
+		<key>percent-type</key>
+		<integer>3</integer>
+		<key>percent-x</key>
+		<real>0.40277779102325439</real>
+		<key>percent-y</key>
+		<real>0.28888890147209167</real>
+		<key>pos-x</key>
+		<integer>580</integer>
+		<key>pos-y</key>
+		<integer>260</integer>
+		<key>rosetta</key>
+		<false/>
+	</dict>
 	<key>Design time language</key>
 	<string>en.lproj</string>
 	<key>MainSplitViewGeometry</key>
@@ -76,13 +101,14 @@
 	<array>
 		<array>
 			<integer>0</integer>
-			<integer>1</integer>
 			<integer>0</integer>
+			<integer>1</integer>
 		</array>
 	</array>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>
+		<integer>1</integer>
 	</array>
 </dict>
 </plist>
