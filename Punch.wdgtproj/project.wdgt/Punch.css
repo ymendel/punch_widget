@@ -51,13 +51,13 @@ body {
 
 #text {
     position: absolute;
-    font-family: HelveticaNeue;
     font-size: 10pt;
     text-overflow: ellipsis;
     overflow: hidden;
-    left: 30px;
-    top: 28px;
     color: rgb(255, 255, 255);
+    font-family: HelveticaNeue-Bold;
+    left: 26px;
+    top: 26px;
 }
 
 #project_name_input {
@@ -66,8 +66,8 @@ body {
     font-family: HelveticaNeue;
     font-size: 10pt;
     top: 46px;
-    width: 76px;
-    left: 30px;
+    width: 80px;
+    left: 26px;
 }
 
 #project_status_indicator {

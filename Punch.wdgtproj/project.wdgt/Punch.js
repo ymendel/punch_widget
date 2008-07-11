@@ -88,7 +88,9 @@ function showBack(event)
 //
 function showFront(event)
 {
-	setProject();
+	if (!setProject()) {
+		return false;
+	}
 	updateProjectNameDisplay();
 	updateProjectStatusDisplay();
 	
@@ -116,7 +118,31 @@ if (window.widget) {
 
 function setProject() {
 	var element = document.getElementById('project_name_input');
-	project = element.value;
+	val = element.value;
+	
+	val = val.replace(/^\s+/, '');
+	val = val.replace(/\s+$/, '');
+	
+	if (val == '') {
+		projectNameError(element);
+		return false;
+	}
+	else {
+		clearProjectNameError(element);
+		element.value = val;
+		project = element.value;
+	}
+	return true;
+}
+
+function projectNameError(element) {
+	element.style.background = 'red';
+	element.style.color      = 'white';
+}
+
+function clearProjectNameError(element) {
+	element.style.background = 'white';
+	element.style.color      = 'black';
 }
 
 function updateProjectNameDisplay() {
