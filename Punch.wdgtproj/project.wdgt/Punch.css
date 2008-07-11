@@ -49,19 +49,6 @@ body {
     margin-top: auto;
 }
 
-#helloText {
-    position: absolute;
-    top: 85px;
-    left: 94px;
-    right: 95px;
-    width: 91px;
-    color: black;
-    font-family: HelveticaNeue-Bold;
-    font-size: 11pt;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #backDevelopedWith {
     position: absolute;
     top: 67px;
@@ -69,4 +56,49 @@ body {
     right: 43px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#punch_title {
+    position: absolute;
+    color: black;
+    font-family: HelveticaNeue-Bold;
+    font-size: 11pt;
+    top: 47px;
+    right: 102px;
+    margin-left: auto;
+    width: 74px;
+    left: 104px;
+    margin-right: auto;
+}
+
+#project_name_display {
+    position: absolute;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    left: 104px;
+    top: 86px;
+}
+
+#text {
+    position: absolute;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    left: 44px;
+    top: 179px;
+}
+
+#project_name_input {
+    position: absolute;
+    width: 70px;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    left: 136px;
+    top: 171px;
 }

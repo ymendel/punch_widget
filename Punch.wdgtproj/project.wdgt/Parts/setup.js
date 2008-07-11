@@ -3,8 +3,10 @@
 function setupParts() {
     if (setupParts.called) return;
     setupParts.called = true;
-    CreateText('helloText', { text: unescape('Hello%2C World!') });
+    CreateText('punch_title', { text: 'punch title' });
     CreateInfoButton('info', { frontID: 'front', foregroundStyle: 'white', backgroundStyle: 'black', onclick: 'showBack' });
     CreateGlassButton('done', { text: 'Done', onclick: 'showFront' });
+    CreateText('project_name_display', { text: 'project name' });
+    CreateText('text', { text: 'Project Name:' });
 }
 window.addEventListener('load', setupParts, false);
