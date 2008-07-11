@@ -3,7 +3,6 @@
 function setupParts() {
     if (setupParts.called) return;
     setupParts.called = true;
-    CreateText('punch_title', { text: 'punch title' });
     CreateInfoButton('info', { frontID: 'front', foregroundStyle: 'white', backgroundStyle: 'black', onclick: 'showBack' });
     CreateGlassButton('done', { text: 'Done', onclick: 'showFront' });
     CreateText('project_name_display', { text: 'project name' });
