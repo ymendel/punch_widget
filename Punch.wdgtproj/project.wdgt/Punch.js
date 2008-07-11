@@ -120,3 +120,16 @@ function updateProjectNameDisplay() {
 	var element = document.getElementById('project_name_display');
 	element.innerText = project;
 }
+
+function getProjectStatus() {
+	var outputString = widget.system('/usr/bin/punch status ' + project, null).outputString;
+	var lines = outputString.split(/\n/);
+	var statusLine = lines[2] || '';
+	var match = statusLine.match(/^\s+(\w+):/);
+	
+	if (match) {
+		return match[1];
+	} else {
+		return 'error';
+	}
+}
