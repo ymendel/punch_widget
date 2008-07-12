@@ -137,7 +137,7 @@ function setProject() {
 	val = val.replace(/^\s+/, '');
 	val = val.replace(/\s+$/, '');
 	
-	if (val == '') {
+	if ((val == '') || (val.match(/\s/))) {
 		projectNameError(element);
 		return false;
 	}
