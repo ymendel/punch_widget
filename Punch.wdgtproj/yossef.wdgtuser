@@ -25,11 +25,11 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>988ab5e23050ac41</string>
+		<string>3df1f402a950ac41</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Y6/Y6YXERgVHkK9opLYiohr8++++TI/-Tmp-/Dashcode/.Punch.wdgtproj0PXUhn/Punch.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Y6/Y6YXERgVHkK9opLYiohr8++++TI/-Tmp-/Dashcode/.Punch.wdgtprojT8kEeB/Punch.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
@@ -101,8 +101,8 @@
 	<array>
 		<array>
 			<integer>0</integer>
-			<integer>1</integer>
-			<integer>1</integer>
+			<integer>0</integer>
+			<integer>3</integer>
 		</array>
 	</array>
 	<key>Opened Steps</key>
