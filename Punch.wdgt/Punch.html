@@ -25,14 +25,15 @@
         <div id="info"></div>
         
     <div apple-text-overflow="ellipsis" id="project_name_display"></div>
-    <div id="project_status_indicator"></div>
+    <div id="project_status_indicator" onclick="updateProjectStatusDisplay()"></div>
     <div id="punch_button"></div>
+    
     </div>
     <div id="back">
        <img id="backImg" src="Images/back.png" alt="">
         
         <div id="done"></div>
-    <input type="text" name="project_name_input" value="" id="project_name_input">
+    <input type="text" name="project_name_input" value="" id="project_name_input" onkeypress="projectNameSubmit(event)">
     <div apple-text-overflow="ellipsis" id="project_name_input_label"></div>
     </div>
 
