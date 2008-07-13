@@ -47,6 +47,9 @@ function hide()
 function show()
 {
     // Restart any timers that were stopped on hide
+	if (project) {
+		updateProjectStatusDisplay();
+	}
 }
 
 //
