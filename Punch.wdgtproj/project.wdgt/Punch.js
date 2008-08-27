@@ -196,7 +196,12 @@ function getProjectStatus() {
 	if (match) {
 		return match[1];
 	} else {
-		return 'error';
+		match = lines[0].match(/"(\w+)"/);
+		if (match) {
+			return match[1];
+		} else {
+			return 'error';
+		}
 	}
 }
 
