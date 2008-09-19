@@ -20,7 +20,7 @@
 </head>
 <body onload="load();">
     <div id="front">
-        <img id="frontImg" src="Images/front.png" alt="">
+        <img id="frontImg" src="Images/front.png" alt="" onmouseover="enterWidget(event)" onmouseout="leaveWidget(event)">
         
         <div id="info"></div>
         
@@ -28,6 +28,8 @@
     <div id="project_status_indicator" onclick="updateProjectStatusDisplay()"></div>
     <div id="punch_button"></div>
     
+    
+    <div id="add_button"></div>
     </div>
     <div id="back">
        <img id="backImg" src="Images/back.png" alt="">
