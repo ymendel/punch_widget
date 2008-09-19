@@ -14,6 +14,7 @@ function load()
     setupParts();
 	showBack();
 	getPunchCommand();
+	getProjectValue();
 }
 
 function getPunchCommand() {
@@ -28,7 +29,7 @@ function remove()
 {
     // Stop any timers to prevent CPU usage
     // Remove any preferences as needed
-    // widget.setPreferenceForKey(null, createInstancePreferenceKey("your-key"));
+	setProjectValue(null);
 }
 
 //
@@ -147,9 +148,18 @@ function setProject() {
 	else {
 		clearProjectNameError(element);
 		element.value = val;
-		project = element.value;
+		setProjectValue(element.value);
 	}
 	return true;
+}
+
+function setProjectValue(value) {
+	project = value;
+	widget.setPreferenceForKey(value, createInstancePreferenceKey('project'));
+}
+
+function getProjectValue() {
+	project = widget.preferenceForKey(createInstancePreferenceKey('project'));
 }
 
 function projectNameError(element) {
