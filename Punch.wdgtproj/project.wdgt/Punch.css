@@ -98,3 +98,15 @@ body {
     left: 26px;
     top: 26px;
 }
+
+#add_button {
+    position: absolute;
+    font-family: HelveticaNeue-Bold;
+    font-size: 12px;
+    text-align: center;
+    height: 17px;
+    width: 16px;
+    top: 17px;
+    left: 178px;
+    visibility: hidden;
+}

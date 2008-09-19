@@ -253,3 +253,20 @@ function buttonAction(event) {
 	widget.system(punch_command + ' ' + actionFromStatus() + ' ' + project, null);
 	updateProjectStatusDisplay();
 }
+
+
+function addWidget(event) {
+    widget.system('open ~/Library/Widgets/Punch.wdgt', null);
+}
+
+
+function enterWidget(event) {
+    var add_button = document.getElementById('add_button');
+	add_button.style.visibility = 'visible';
+}
+
+
+function leaveWidget(event) {
+    var add_button = document.getElementById('add_button');
+	add_button.style.visibility = 'hidden';
+}
