@@ -12,9 +12,14 @@ var status;
 function load()
 {
     setupParts();
-	showBack();
 	getPunchCommand();
 	getProjectValue();
+	
+	if (project) {
+		updateProjectDisplay();
+	} else {
+		showBack();
+	}
 }
 
 function getPunchCommand() {
@@ -49,7 +54,7 @@ function show()
 {
     // Restart any timers that were stopped on hide
 	if (project) {
-		updateProjectStatusDisplay();
+		updateProjectDisplay();
 	}
 }
 
@@ -101,8 +106,7 @@ function showFront(event)
 	if (!setProject()) {
 		return false;
 	}
-	updateProjectNameDisplay();
-	updateProjectStatusDisplay();
+	updateProjectDisplay();
 	
     var front = document.getElementById("front");
     var back = document.getElementById("back");
@@ -279,4 +283,9 @@ function enterWidget(event) {
 function leaveWidget(event) {
     var add_button = document.getElementById('add_button');
 	add_button.style.visibility = 'hidden';
+}
+
+function updateProjectDisplay() {
+	updateProjectNameDisplay();
+	updateProjectStatusDisplay();
 }
